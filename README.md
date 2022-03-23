@@ -5,7 +5,7 @@ This Twilio text message bot can take notes for you and also create reminders
 
 Cd into the project folder.
 `cd ....\myproject`
-Activate the venv
+and activate the venv
 `myproject\Scripts\activate`
 
 ## Install Flask and Twilio
