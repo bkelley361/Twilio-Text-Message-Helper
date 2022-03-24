@@ -135,7 +135,6 @@ def secondaryLoop():
         time.sleep(1)
         now = datetime.now()
         current_time = now.strftime("%I:%M %p")
-        print(current_time)
         hour = current_time.split(":")[0]
         if (hour[0] == "0"):
             hour = hour[1]
@@ -145,7 +144,7 @@ def secondaryLoop():
         newDictionary = getReminder()
         for key in newDictionary:
             if (newDictionary[key][0] == hour and newDictionary[key][1] == minute and newDictionary[key][2] == amorpm):
-                print(newDictionary[key][3])
+                sendMsg(newDictionary[key][3])
                 time.sleep(60)
 
 
